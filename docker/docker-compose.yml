@@ -46,7 +46,7 @@ services:
       POSTGRES_USER: ${PSQL_USER}
       POSTGRES_PASSWORD: ${PSQL_PASS}
       POSTGRES_DB: ${PSQL_DB}
-    command: sh -c "/bin/sh /db/db_config.sh ; sleep 1000000"
+    command: sh -c "/bin/sh /db/db_config.sh ; sleep 100"
     networks:
       - public
   redis:
